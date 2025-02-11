@@ -3,8 +3,9 @@ namespace KasaStreamer.Data
 {
     public class Configuration
     {
-        public string KasaUsername { get; set; }
-        public string KasaPassword { get; set; }
+        public string? KasaAuthString { get; set; }
+        public string? KasaUsername { get; set; }
+        public string? KasaPassword { get; set; }
         public CameraConfig[] Cameras { get; set; }
         public int? RetryLimit { get; set; }
         public float? RetrySleep { get; set; }
